@@ -25,17 +25,17 @@ print
 
 # Print cases
 for line in data:
-  print "case " + line[0]
+  print "    case " + line[0]
 
 # Print relative paths
 print
-print "var relativePath: String {"
-print "switch self {"
+print "    var relativePath: String {"
+print "        switch self {"
 for line in data:
-  print "case ." + line[0] + ":"
-  print "return \"" + line[1][2:] + "\""
-print "}"
-print "}"
+  print "        case ." + line[0] + ":"
+  print "            return \"" + line[1][2:] + "\""
+print "        }"
+print "    }"
 
 print
 print "}"
